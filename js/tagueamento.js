@@ -6,6 +6,12 @@
   ga('create', 'UA-12345-6', 'auto');
   ga('send', 'pageview');
 
-
-
+//Função responsavel por link externo "Entre em contato" em todas as páginas
+function link_externo() {
+  ga('send', 'event', {
+    eventCategory: 'menu',
+    eventAction: 'entre_em_contato',
+    eventLabel: 'link_externo'
+  });
+}
 
