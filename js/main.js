@@ -65,6 +65,7 @@
         .attr('src', 'img/logo-dp6-square.png')
         .attr('alt', 'Logo DP6');
       lb.find('.lightbox-title').text('Contato enviado');
+      document.addEventListener('submit', enviar())
       lbContent.html('Obrigado pelo seu contato!').scrollTop(0);
       setTimeout(function () {
         body.addClass('lightbox-open');
