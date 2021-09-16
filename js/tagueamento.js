@@ -18,8 +18,6 @@ function downloadPDF() {
     eventLabel: 'download_pdf'
   });
 }
-
-
 //Função responsavel por link externo "Entre em contato" em todas as páginas
 function  entreEmContato() {
   ga('send', 'event', {
@@ -29,3 +27,40 @@ function  entreEmContato() {
   });
 }
 
+// Funções responsavel pelo formulario em Sobre
+
+function nome() {
+  ga('send', 'event', {
+      eventCategory: 'contato',
+      eventAction: 'nome',
+      eventLabel: 'preencheu'
+    });
+  }
+function email() {
+  ga('send', 'event', {
+      eventCategory: 'contato',
+      eventAction: 'email',
+      eventLabel: 'preencheu'
+  });
+}
+function telefone() {
+  ga('send', 'event', {
+      eventCategory: 'contato',
+      eventAction: 'telefone',
+      eventLabel: 'preencheu'
+  });
+}
+function aceito() {
+  ga('send', 'event', {
+      eventCategory: 'contato',
+      eventAction: 'aceito',
+      eventLabel: 'preencheu'
+  });
+}
+function enviar() {
+  ga('send', 'event', {
+      eventCategory: 'contato',
+      eventAction: 'enviado',
+      eventLabel: 'enviado'
+  });
+}
