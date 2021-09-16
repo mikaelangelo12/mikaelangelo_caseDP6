@@ -1,15 +1,14 @@
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','dp6');
   
-  ga('create', 'UA-12345-6', 'auto');
-  ga('send', 'pageview');
+  dp6('create', 'UA-12345-6', 'auto');
+  dp6('send', 'pageview');
 
 //Função responsavel para o "Download PDF" em todas as páginas
 function downloadPDF() {
-  alert("OlaMundo")
-  ga('send', 'event', {
+  dp6('send', 'event', {
     eventCategory: 'menu',
     eventAction: 'download_pdf',
     eventLabel: 'download_pdf'
@@ -17,7 +16,7 @@ function downloadPDF() {
 }
 //Função responsavel por link externo "Entre em contato" em todas as páginas
 function  entreEmContato() {
-  ga('send', 'event', {
+  dp6('send', 'event', {
     eventCategory: 'menu',
     eventAction: 'entre_em_contato',
     eventLabel: 'link_externo'
@@ -27,35 +26,35 @@ function  entreEmContato() {
 // Funções responsavel pelo formulario em Sobre
 
 function nome() {
-  ga('send', 'event', {
+  dp6('send', 'event', {
       eventCategory: 'contato',
       eventAction: 'nome',
-      eventLabel: 'preencheu'
+      eventLabel: 'completou'
     });
-  }
+}
 function email() {
-  ga('send', 'event', {
+  dp6('send', 'event', {
       eventCategory: 'contato',
       eventAction: 'email',
-      eventLabel: 'preencheu'
+      eventLabel: 'completou'
   });
 }
 function telefone() {
-  ga('send', 'event', {
+  dp6('send', 'event', {
       eventCategory: 'contato',
       eventAction: 'telefone',
-      eventLabel: 'preencheu'
+      eventLabel: 'completou'
   });
 }
 function aceito() {
-  ga('send', 'event', {
+  dp6('send', 'event', {
       eventCategory: 'contato',
       eventAction: 'aceito',
-      eventLabel: 'preencheu'
+      eventLabel: 'completou'
   });
 }
 function enviar() {
-  ga('send', 'event', {
+  dp6('send', 'event', {
       eventCategory: 'contato',
       eventAction: 'enviado',
       eventLabel: 'enviado'
