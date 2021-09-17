@@ -24,14 +24,14 @@ function  entreEmContato() {
 }
 
 // Funções responsavel pelo formulario em Sobre
-
-function nome() {
+$( "#nome" ).blur( => {  
   dp6('send', 'event', {
-      eventCategory: 'contato',
-      eventAction: 'nome',
-      eventLabel: 'completou'
-    });
-}
+    eventCategory: 'contato',
+    eventAction: 'nome',
+    eventLabel: 'completou'
+  });
+});
+
 function email() {
   dp6('send', 'event', {
       eventCategory: 'contato',
