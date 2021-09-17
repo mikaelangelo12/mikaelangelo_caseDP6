@@ -63,3 +63,16 @@ function enviar() {
       eventLabel: 'enviado'
   });
 }
+
+//Funções responsavel pela  pagina "Analise"
+
+$(".card-montadoras").each(function (){ 
+  $(this).on("click", () => {
+    dp6('send', {
+      hitType: 'event',
+      eventCategory: 'analise',
+      eventAction: 'ver_mais',
+      eventLabel: $(this).data('name')
+    });
+  });
+});
