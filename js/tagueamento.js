@@ -2,7 +2,7 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','dp6');
-  
+
   dp6('create', 'UA-12345-6', 'auto');
   dp6('send', 'pageview');
 
@@ -24,7 +24,6 @@ function  entreEmContato() {
 }
 
 // Funções responsavel pelo formulario em Sobre
-
 $("#nome").on("blur", function() {
   dp6('send', 'event', {
     eventCategory: 'contato',
@@ -65,7 +64,6 @@ function enviar() {
 }
 
 //Funções responsavel pela  pagina "Analise"
-
 $(".card-montadoras").each(function (){ 
   $(this).on("click", () => {
     dp6('send', {
