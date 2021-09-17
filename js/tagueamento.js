@@ -25,35 +25,34 @@ function  entreEmContato() {
 
 // Funções responsavel pelo formulario em Sobre
 
-$( "#nome" ).blur( => {  
+$("#nome").on("blur", function() {
   dp6('send', 'event', {
     eventCategory: 'contato',
     eventAction: 'nome',
-    eventLabel: 'completou'
+    eventLabel: 'preencheu'
   });
-
 });
 
 $( "#email" ).blur( => {  
   dp6('send', 'event', {
       eventCategory: 'contato',
       eventAction: 'email',
-      eventLabel: 'completou'
+      eventLabel: 'preencheu'
   });
 });
 
-$( "#telefone" ).blur( => {  
+$("#telefone").on("blur", function() { 
   dp6('send', 'event', {
       eventCategory: 'contato',
       eventAction: 'telefone',
-      eventLabel: 'completou'
+      eventLabel: 'preencheu'
   });
 });
-$( "#aceito" ).blur( => {  
+$("#aceito").on("click", function() {  
   dp6('send', 'event', {
       eventCategory: 'contato',
       eventAction: 'aceito',
-      eventLabel: 'completou'
+      eventLabel: 'preencheu'
   });
 });
 
