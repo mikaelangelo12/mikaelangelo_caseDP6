@@ -33,7 +33,7 @@ $("#nome").on("blur", function() {
   });
 });
 
-$( "#email" ).blur( => {  
+$( "#email").on("blur", function() { 
   dp6('send', 'event', {
       eventCategory: 'contato',
       eventAction: 'email',
